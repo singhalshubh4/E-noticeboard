@@ -1,0 +1,11 @@
+<app-nav-bar></app-nav-bar>
+<div class="jumbotron w-75 mx-auto">
+  <h5 class="text-center">Notice</h5>
+  <p>Date:{{notice.date | date:'dd-MMM-yyyy'}}</p>
+  <p>LastDate:{{notice.lastdate | date:'dd-MMM-yyyy'}}</p>
+  <p>Dept:{{notice.department}}</p>
+  <h3 class="text-center mb-5">{{notice.heading}}</h3>
+  <h6 class="text-center mb-5">{{notice.description}}</h6>
+  <img src="{{notice.docLink}}" width="500" />
+</div>
+<app-footer></app-footer>

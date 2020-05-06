@@ -1,0 +1,14 @@
+img {
+  width: 100px;
+  height: 100px;
+}
+li {
+  list-style: none;
+}
+form {
+  transform: translateX(600px);
+}
+span {
+  color: red;
+  cursor: pointer;
+}

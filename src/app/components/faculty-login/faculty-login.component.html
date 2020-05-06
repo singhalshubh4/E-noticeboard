@@ -1,0 +1,27 @@
+<div class="jumbotron mx-auto mt-5 p-3 w-25">
+  <h3 class="text-info mb-5 text-center">Faculty Login</h3>
+  <form
+    class="form-group mt-5"
+    #formData="ngForm"
+    (ngSubmit)="onSubmit(formData)"
+  >
+    <input
+      class="form-control mb-3 text-center text-capitalize font-italic border"
+      type="text"
+      placeholder="username"
+      [(ngModel)]="facultySchema.uname"
+      name="uname"
+    />
+    <input
+      class="form-control mb-3 text-center text-capitalize font-italic border"
+      type="password"
+      placeholder="password"
+      [(ngModel)]="facultySchema.pass"
+      name="pass"
+    />
+    <button type="submit" class="btn btn-dark w-50 b text-danger">
+      Sign In
+    </button>
+  </form>
+  <a href="/"><h6 class="text-center">Student login?</h6></a>
+</div>

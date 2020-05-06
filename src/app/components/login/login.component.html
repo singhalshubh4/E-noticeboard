@@ -1,0 +1,25 @@
+<header>
+  <div class="jumbotron">
+    <form #formdata="ngForm" (ngSubmit)="onSubmit(formdata)">
+      <h4 class="text-center mb-5">Welcome to E-notice Board</h4>
+      <div class="form-group">
+        <input
+          [(ngModel)]="username"
+          name="username"
+          class="form-control mb-5 text-center py-3 in"
+          type="text"
+          placeholder="username"
+        />
+        <input
+          [(ngModel)]="password"
+          name="password"
+          class="form-control text-center py-3 in"
+          type="password"
+          placeholder="password"
+        />
+        <button class="btns in" type="submit">Sign In</button>
+      </div>
+    </form>
+    <a href="/faculty-login"><h6 class="text-center">faculty-login?</h6></a>
+  </div>
+</header>

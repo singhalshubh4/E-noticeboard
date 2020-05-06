@@ -1,0 +1,86 @@
+<form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+  <div class="form-group jumbotron w-50 mt-5 mx-auto">
+    <h1 class="text-center text-primary">Add Notice</h1>
+    <label>Enter heading:</label>
+    <input
+      type="text"
+      name="heading"
+      [(ngModel)]="heading"
+      placeholder="Heading goes here"
+      class="form-control"
+      required
+    />
+    <label>Enter submission date:</label>
+    <input
+      type="text"
+      name="lastdate"
+      [(ngModel)]="lastdate"
+      placeholder="Enter submission date (YYYY-MM-DD)"
+      class="form-control"
+      required
+    />
+    <label>Enter Department:</label>
+    <p>
+      <input type="checkbox" name="department" (click)="addDept('CSE')" />CSE
+      <input name="department" type="checkbox" (click)="addDept('IT')" />IT
+      <input type="checkbox" name="department" (click)="addDept('EN')" />EN
+      <input type="checkbox" name="department" (click)="addDept('EI')" />EI
+      <input type="checkbox" name="department" (click)="addDept('MECH')" />MECH
+      <input type="checkbox" name="department" (click)="addDept('ECE')" />ECE
+      <input
+        type="checkbox"
+        name="department"
+        (click)="addDept('CIVIL')"
+      />CIVIL
+    </p>
+    <label>Image:</label>
+    <input
+      type="file"
+      name="notice"
+      (change)="onFile($event)"
+      placeholder="Image Url"
+      class="form-control"
+      required
+    />
+    <label>Enter year: </label>
+    <p>
+      <input type="checkbox" name="1" (click)="add(1)" />1
+      <input name="year" type="checkbox" (click)="add(2)" />2
+      <input type="checkbox" name="year" (click)="add(3)" />3
+      <input type="checkbox" name="year" (click)="add(4)" />4
+    </p>
+    <h6 class="text-danger text-center mt-2">(All input is must)</h6>
+    <button type="submit" class="btn btn-dark text-danger mt-3">Submit</button>
+  </div>
+</form>
+
+<!-- <input
+      type="text"
+      name="department"
+      [(ngModel)]="department"
+      placeholder="Department name"
+      class="form-control"
+      required
+    /> -->
+<!-- <input
+    type="text"
+    name="year"
+    [(ngModel)]="year"
+    placeholder="Enter year"
+    class="form-control"
+    required
+  /> -->
+<!-- <input
+      type="text"
+      name="section"
+      [(ngModel)]="section"
+      placeholder="Enter section"
+      class="form-control"
+      required
+    /> -->
+<!-- <label>Enter Section:</label>
+    <p>
+      <input type="checkbox" name="1" (click)="addSection(1)" />1
+      <input name="year" type="checkbox" (click)="addSection(2)" />2
+      <input type="checkbox" name="year" (click)="addSection(3)" />3
+    </p> -->

@@ -1,0 +1,88 @@
+<form #myform="ngForm" (ngSubmit)="createAccount(myform)">
+  <div class="form-group jumbotron w-50 mt-5 mx-auto">
+    <h1 class="text-center text-primary">Create Student Account</h1>
+    <label>Enter name:</label>
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="name"
+      placeholder="Student name"
+      class="form-control"
+      required
+    />
+    <label>Enter Student No:</label>
+    <input
+      type="text"
+      name="stdNo"
+      [(ngModel)]="stdNo"
+      placeholder="Enter student No "
+      class="form-control"
+      required
+    />
+    <label>Enter Rollno:</label>
+    <input
+      type="text"
+      name="rollNo"
+      [(ngModel)]="rollNo"
+      placeholder="Student Roll Number(this will be your username)"
+      class="form-control"
+      required
+    />
+    <label>Enter branch:</label>
+    <select
+      name="branch"
+      [(ngModel)]="branch"
+      placeholder="Enter branch for Eg:CSE"
+      class="form-control"
+      required
+    >
+      <option>CSE</option>
+      <option>IT</option>
+      <option>MECH</option>
+      <option>ECE</option>
+      <option>EN</option>
+      <option>EI</option>
+      <option>CIVIL</option>
+    </select>
+    <label>Enter year:</label>
+    <select
+      name="year"
+      [(ngModel)]="year"
+      placeholder="Enter year"
+      class="form-control"
+      required
+    >
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+    <label>Enter section:</label>
+    <input
+      type="text"
+      name="section"
+      [(ngModel)]="section"
+      placeholder="Enter section for eg:CS1"
+      class="form-control"
+      required
+    /><label>Enter mobile no:</label>
+    <input
+      type="text"
+      name="mobNo"
+      [(ngModel)]="mobNo"
+      placeholder="Enter Mobile Number(this will be your password)"
+      class="form-control"
+      required
+    /><label>Enter Email-ID:</label>
+    <input
+      type="email"
+      name="email"
+      [(ngModel)]="email"
+      placeholder="Enter Email ID"
+      class="form-control"
+      required
+    />
+    <h6 class="text-danger text-center mt-2">(All input is must)</h6>
+    <button type="submit" class="btn btn-dark text-danger mt-3">Submit</button>
+  </div>
+</form>

@@ -1,0 +1,22 @@
+.footer {
+  padding: 40px 0;
+  background: rgb(59, 41, 41);
+  display: flex;
+  color: gray;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.about {
+  width: 450px;
+}
+h6 {
+  padding: 20px 0;
+  border-top: 1.5px solid yellow;
+  background: rgb(59, 41, 41);
+  text-align: center;
+  color: gray;
+}
+h3,
+span {
+  color: white;
+}
